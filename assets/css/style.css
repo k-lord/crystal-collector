@@ -1,0 +1,84 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    background-color: peru;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.2em;
+    padding: 15px;
+}
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gameContent {
+    padding: 20px;
+    text-align: center;
+}
+
+#instructions {
+    width: 80;
+    margin: 0 auto 0 auto;
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 0;
+}
+
+#mysteryNumber {
+    background-color: lightsalmon;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    margin-left: 150px;
+    margin-right: 10px;
+    width: 100px;
+    height: 90px;
+    padding-top: 10px;
+}
+
+#winsAndLosses {
+    background-color: lightsalmon;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 150px;
+    width: 100px;
+    height: 90px;
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+#jewelImages {
+    width: 75%; 
+    margin: 0 auto 0 auto;
+}
+
+#results {
+    text-align: left;
+}
+
+img {
+    height: 100px;
+    margin: 0 auto 0 auto;  
+}
+
+#score {
+    background-color: peru;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#totalScore {
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    letter-spacing: 0.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
