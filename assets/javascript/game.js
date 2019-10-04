@@ -58,23 +58,14 @@ $("#jewel1").on("click", function() {
     wins++;
     console.log("You win! New total wins: " + wins)
     $("#wins").text(wins);
-    jewel1 = 0;
-    jewel2 = 0;
-    jewel3 = 0;
-    jewel4 = 0;
-    
   };
-
 
   if (score > targetNumber) {
     losses++;
     console.log("you lose! New total losses: " + losses)
     $("#loss").text(losses);
-    jewel1 = 0;
-    jewel2 = 0;
-    jewel3 = 0;
-    jewel4 = 0;
   }
+
 });
 
 // Repeat above code for jewel img 2
@@ -89,20 +80,12 @@ $("#jewel2").on("click", function() {
     wins++;
     console.log("You win! New total wins: " + wins);
     $("#wins").text(wins);
-    jewel1 = 0;
-    jewel2 = 0;
-    jewel3 = 0;
-    jewel4 = 0;
   }
 
   if (score > targetNumber) {
     losses++;
     console.log("you lose! New total losses: " + losses);
     $("#loss").text(losses);
-    jewel1 = 0;
-    jewel2 = 0;
-    jewel3 = 0;
-    jewel4 = 0;
   }
 });
 
@@ -118,22 +101,12 @@ $("#jewel3").on("click", function() {
     wins++;
     console.log("You win! New total wins: " + wins);
     $("#wins").text(wins);
-    jewel1 = 0;
-    jewel2 = 0;
-    jewel3 = 0;
-    jewel4 = 0;
-   
   }
 
   if (score > targetNumber) {
     losses++;
     console.log("you lose! New total losses: " + losses);
     $("#loss").text(losses);
-    jewel1 = 0;
-    jewel2 = 0;
-    jewel3 = 0;
-    jewel4 = 0;
-
   }
 
 });
@@ -150,21 +123,12 @@ $("#jewel4").on("click", function() {
       wins++;
       console.log("You win! New total wins: " + wins);
       $("#wins").text(wins);
-      jewel1 = 0;
-      jewel2 = 0;
-      jewel3 = 0;
-      jewel4 = 0;
     }
   
     if (score > targetNumber) {
       losses++;
       console.log("you lose! New total losses: " + losses);
       $("#loss").text(losses);
-      jewel1 = 0;
-      jewel2 = 0;
-      jewel3 = 0;
-      jewel4 = 0;
-      
     }
 
 });
@@ -172,7 +136,7 @@ $("#jewel4").on("click", function() {
 /*Reset button: keep wins and losses tallying
 targetNumber value changes, jewels values change, and Total resets to 0*/
 
-$("#reset-button").on("click", function() {
+$("#reset-button").on("click", function(reset) {
   console.log("you clicked the reset button");
 
   var targetNumber = Math.floor(Math.random() * 102 + 19);
