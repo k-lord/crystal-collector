@@ -24,8 +24,11 @@ $("#randomNumber").append(targetNumber);
 //set initial score to 0, wins to 0, and losses to 0
 
 var score = 0;
+$("#numberScore").text(score);
 var wins = 0;
+$("#wins").text(wins);
 var losses = 0;
+$("#loss").text(losses);
 
 //each jewel gets computer generated random number var jewel1, etc. between 1-12
 
@@ -54,7 +57,7 @@ $("#jewel1").on("click", function() {
   if (score === targetNumber) {
     wins++;
     console.log("You win! New total wins: " + wins)
-    $("#wins").append(wins);
+    $("#wins").text(wins);
   }
 
   //when score > targetNumber user loses and losses++ and insert loss tally in losses span + add reset button
@@ -62,7 +65,7 @@ $("#jewel1").on("click", function() {
   if (score > targetNumber) {
     losses++;
     console.log("you lose! New total losses: " + losses)
-    $("#loss").append(losses);
+    $("#loss").text(losses);
   }
 });
 
@@ -77,7 +80,7 @@ $("#jewel2").on("click", function() {
   if (score === targetNumber) {
     wins++;
     console.log("You win! New total wins: " + wins);
-    $("#wins").append(wins);
+    $("#wins").text(wins);
   }
 
   //when score > targetNumber user loses and losses++ and insert loss tally in losses span + add reset button
@@ -85,7 +88,7 @@ $("#jewel2").on("click", function() {
   if (score > targetNumber) {
     losses++;
     console.log("you lose! New total losses: " + losses);
-    $("#loss").append(losses);
+    $("#loss").text(losses);
   }
 });
 
@@ -100,7 +103,7 @@ $("#jewel3").on("click", function() {
   if (score === targetNumber) {
     wins++;
     console.log("You win! New total wins: " + wins);
-    $("#wins").append(wins);
+    $("#wins").text(wins);
   }
 
   //when score > targetNumber user loses and losses++ and insert loss tally in losses span + add reset button
@@ -108,7 +111,7 @@ $("#jewel3").on("click", function() {
   if (score > targetNumber) {
     losses++;
     console.log("you lose! New total losses: " + losses);
-    $("#loss").append(losses);
+    $("#loss").text(losses);
   }
 
 });
@@ -124,7 +127,7 @@ $("#jewel4").on("click", function() {
     if (score === targetNumber) {
       wins++;
       console.log("You win! New total wins: " + wins);
-      $("#wins").append(wins);
+      $("#wins").text(wins);
     }
   
     //when score > targetNumber user loses and losses++ and insert loss tally in losses span + add reset button
@@ -132,7 +135,7 @@ $("#jewel4").on("click", function() {
     if (score > targetNumber) {
       losses++;
       console.log("you lose! New total losses: " + losses);
-      $("#loss").append(losses);
+      $("#loss").text(losses);
     }
 
 });
@@ -140,3 +143,6 @@ $("#jewel4").on("click", function() {
 
 //keep wins and losses tallying even though Randomnumber changes, jewels change, and Total resets to 0
 
+$("#reset-button").on("click", function() {
+  console.log("you clicked the reset button");
+});
