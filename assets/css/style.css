@@ -64,6 +64,10 @@ h1 {
     margin-bottom: 0;
 }
 
+.container {
+    margin-top: 40px;
+}
+
 .row {
     margin-left: 20px;
     margin-right: 20px;
@@ -75,28 +79,27 @@ h1 {
 }
 
 #mysteryNumber {
-    background-color: rgba(231, 110, 62, 0.801);
-    color: whitesmoke;
-    font-size: 50px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 44px;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 150px;
-    margin-right: 10px;
-    width: 100px;
+    text-align: right;
     height: 90px;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-right: 80px;
+    width: 150px;
 }
 
 #winsAndLosses {
-    background-color: rgba(231, 110, 62, 0.801);
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    margin-left: 10px;
-    margin-right: 150px;
-    width: 100px;
     height: 90px;
     padding-top: 10px;
-    padding-left: 60px;
+    padding-right: 10px;
+    width: 150px;
+    text-align: left;
 }
 
 #jewelImages {
@@ -125,4 +128,35 @@ img {
     color: whitesmoke;
     letter-spacing: 0.2em;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 991px) {
+    #mysteryNumber {
+        font-size: 30px;
+        padding-top: 35px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #mysteryNumber {
+        font-size: 28px;
+        padding-top: 35px;
+    }
+
+    img {
+        width: 90px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #totalScore {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    #mysteryNumber {
+        font-size: 24px;
+        padding-top: 40px;
+    }
 }

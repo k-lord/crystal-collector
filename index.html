@@ -26,14 +26,16 @@
     </div>
 
     <div class="container">    
-      <div class="row">
+        <div class="row">
             <div class="col gameContent" id="mysteryNumber">
-                <span id="randomNumber"></span>
+                <span id="randomNumber">Target: </span>
             </div>
 
             <div class="col gameContent" id="winsAndLosses">
-                <p id="results"><span id="wins">Wins: </span></p>
-                <p id="results"><span id="loss">Losses: </span></p>
+                <div id="winsAndLosses" class="rounded">
+                    <p id="results"><span id="wins">Wins: </span></p>
+                    <p id="results"><span id="loss">Losses: </span></p>
+                </div>
             </div>
         </div>
 
@@ -55,7 +57,7 @@
             </div>
         </div>
 
-        <div class="row" id="score">
+        <div class="row rounded" id="score">
             <div class="col gameContent">
                 <h2 id="totalScore">YOUR TOTAL SCORE IS: <span id="numberScore"></span></h2>
             </div>

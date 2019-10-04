@@ -19,7 +19,7 @@ for (i = 0; i < coll.length; i++) {
 
 var targetNumber = Math.floor(Math.random() * 102 + 19);
 console.log("The target number is: " + targetNumber);
-$("#randomNumber").text(targetNumber);
+$("#randomNumber").append(targetNumber);
 
 //set initial score to 0, wins to 0, and losses to 0
 
