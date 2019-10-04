@@ -2,13 +2,66 @@ body {
     background-color: whitesmoke;
 }
 
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Amatic SC', cursive;
+    outline: none;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: whitesmoke;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; 
+}
+
+button:focus {
+    outline:0;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+#instructions {
+    text-align: center;
+    width: 80;
+    margin: 0 auto 0 auto;
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 0;
+}
+
 h1 {
     text-align: center;
     color: whitesmoke;
-    background-color: peru;
+    background-color: rgba(205, 134, 63, 0.774);
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.2em;
     padding: 15px;
+    margin-bottom: 0;
 }
 
 .row {
@@ -21,20 +74,11 @@ h1 {
     text-align: center;
 }
 
-#instructions {
-    width: 80;
-    margin: 0 auto 0 auto;
-    font-size: 22px;
-    letter-spacing: 0.2em;
-    font-family: 'Amatic SC', cursive;
-    margin-bottom: 0;
-}
-
 #mysteryNumber {
-    background-color: lightsalmon;
+    background-color: rgba(231, 110, 62, 0.801);
     color: whitesmoke;
     font-size: 50px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Courier New', Courier, monospace;
     margin-left: 150px;
     margin-right: 10px;
     width: 100px;
@@ -43,7 +87,7 @@ h1 {
 }
 
 #winsAndLosses {
-    background-color: lightsalmon;
+    background-color: rgba(231, 110, 62, 0.801);
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
@@ -77,7 +121,7 @@ img {
 
 #totalScore {
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     color: whitesmoke;
     letter-spacing: 0.2em;
     font-family: 'Courier New', Courier, monospace;

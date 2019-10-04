@@ -16,44 +16,42 @@
 
     <h1>CRYSTAL COLLECTOR</h1>
 
-    <div class="container">
-        <div class="row" id="instructions">
-            <div class="col gameContent">
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-                <p>You win the game by matching your total score to the random number.<br>You lose the game if your total score goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the value of each crystal.</p>
-            </div>
-        </div>
-      </div>
+    <button type="button" class="collapsible">INSTRUCTIONS</button>
+    <div class="content" id="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal,<br>you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number.<br>You lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the value of each crystal.</p>
+    </div>
 
+    <div class="container">    
       <div class="row">
             <div class="col gameContent" id="mysteryNumber">
-                <span id="randomNumber">#</span>
+                <span id="randomNumber"></span>
             </div>
 
             <div class="col gameContent" id="winsAndLosses">
                 <p id="results"><span id="wins">Wins: </span></p>
-                <p id="results"><span id="losses">Losses: </span></p>
+                <p id="results"><span id="loss">Losses: </span></p>
             </div>
         </div>
 
         <div class="row" id="jewelImages">
             <div class="col gameContent">
-                <img id="jewel1" src="assets/images/jewel1.png">
+                <img class="jewels" id="jewel1" src="assets/images/jewel1.png">
             </div>
 
             <div class="col gameContent">
-                <img id="jewel2" src="assets/images/jewel2.png">
+                <img class="jewels" id="jewel2" src="assets/images/jewel2.png">
             </div>
 
             <div class="col gameContent">
-                <img id="jewel3" src="assets/images/jewel3.png">
+                <img class="jewels" id="jewel3" src="assets/images/jewel3.png">
             </div>
 
             <div class="col gameContent">
-                <img id="jewel4" src="assets/images/jewel4.png">
+                <img class="jewels" id="jewel4" src="assets/images/jewel4.png">
             </div>
         </div>
 
@@ -62,9 +60,12 @@
                 <h2 id="totalScore">YOUR TOTAL SCORE IS: <span id="numberScore"></span></h2>
             </div>
         </div>
-
-
-
     </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js">
+    
+    
+    
+    </script>
 </body>
 </html>
