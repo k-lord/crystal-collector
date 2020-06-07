@@ -2,7 +2,7 @@
 A single page application click-game build with just HTML, CSS, JavaScript, and jQuery.
 
 
-<img src="/assets/images/jewel1.png" width="200" height="200"><img src="/assets/images/jewel2.png" width="200" height="200"><img src="/assets/images/jewel3.png" width="200" height="200"><img src="/assets/images/jewel4.png" width="200" height="200">
+<img src="/assets/images/jewel1.png" width="200" height="300"><img src="/assets/images/jewel2.png" width="200" height="300"><img src="/assets/images/jewel3.png" width="200" height="300"><img src="/assets/images/jewel4.png" width="200" height="300">
 
 ## How to Play
 - A random target number will be generated at the start of the game.
