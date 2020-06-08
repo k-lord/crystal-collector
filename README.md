@@ -1,5 +1,5 @@
 # Crystal Collector
-A single page application number click-game build with just HTML, CSS, JavaScript, and jQuery.
+A Numbers-Click-Game built with just HTML, CSS, JavaScript, and jQuery as a single page app.
 
 
 <img src="/assets/images/jewel1.png" width="200" height="300"><img src="/assets/images/jewel2.png" width="200" height="300"><img src="/assets/images/jewel3.png" width="200" height="300"><img src="/assets/images/jewel4.png" width="200" height="300">
